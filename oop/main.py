@@ -1,4 +1,4 @@
-from library_system import Book, Ebook, Printbook, Library
+from library_system import Book, EBook, PrintBook, Library
 
 def main():
     # Create a Library instance
@@ -6,8 +6,8 @@ def main():
 
     # Create instances of each type of book
     classic_book = Book("Pride and Prejudice", "Jane Austen")
-    digital_novel = Ebook("Snow Crash", "Neal Stephenson", 500)
-    paper_novel = Printbook("The Catcher in the Rye", "J.D. Salinger", 234)
+    digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
+    paper_novel = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
     # Add books to the library
     my_library.add_book(classic_book)
